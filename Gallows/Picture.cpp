@@ -78,7 +78,7 @@ void Picture::showGuy()
         cout << " |        |" << endl;
         cout << " |        O" << endl;
         cout << " |       /|\\" << endl;
-        cout << " |       / " << endl;
+        cout << " |       / \\" << endl;
         cout << " |" << endl;
         cout << "_|________" << endl;
     }

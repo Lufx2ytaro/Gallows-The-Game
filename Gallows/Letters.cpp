@@ -39,5 +39,8 @@ bool Letters::checkLetter(char sign)
 
 Letters::~Letters()
 {
-	delete[]firstLetters;
+	if (firstLetters != nullptr)
+	{
+		delete[]firstLetters;
+	}
 }

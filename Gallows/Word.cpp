@@ -1,6 +1,8 @@
 #include "Word.h"
 #include "Windows.h"
 #include<iostream>
+#include <fstream> // Для использования операций с файлами
+#include <string>
 
 using namespace std;
 
@@ -23,8 +25,9 @@ Word::Word()
 		{
 			file >> words[i];
 		}
+		file.close();
 	}
-	file.close();
+	
 }
 
 string Word::getWord()
@@ -36,5 +39,8 @@ string Word::getWord()
 
 Word::~Word()
 {
-	delete[] words;
+	if (words != nullptr)
+	{
+		delete[] words;
+	}
 }
