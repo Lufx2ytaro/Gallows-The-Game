@@ -1,6 +1,6 @@
 journal
-Car
-Queen
+car
+queen
 korova
 computer
-Russia
+russia

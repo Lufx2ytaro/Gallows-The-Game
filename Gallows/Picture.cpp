@@ -6,7 +6,6 @@ using namespace std;
 
 Picture::Picture()
 {
-
 	firstStep = 0;
 }
 

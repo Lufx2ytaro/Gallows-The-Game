@@ -42,5 +42,6 @@ Letters::~Letters()
 	if (firstLetters != nullptr)
 	{
 		delete[]firstLetters;
+		firstLetters = nullptr;
 	}
 }

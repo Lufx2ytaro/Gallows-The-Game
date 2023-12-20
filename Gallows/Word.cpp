@@ -18,15 +18,15 @@ Word::Word()
 	}
 	else
 	{
-		SetConsoleCP(1251);
-		SetConsoleOutputCP(1251);
+		//string str="";
 		words = new string[sizeV];
 		for (int i = 0; i < sizeV; i++)
 		{
+			//getline(file, str);
 			file >> words[i];
 		}
-		file.close();
 	}
+	file.close();
 	
 }
 
@@ -42,5 +42,6 @@ Word::~Word()
 	if (words != nullptr)
 	{
 		delete[] words;
+		words = nullptr;
 	}
 }
